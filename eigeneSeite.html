@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" href="eigeneSeite.css">
+<link rel="stylesheet" href="eigeneSeite.css">
+<link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Boogaloo&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<script src="eigenewebseite.js"></script>
 <title>Streaming for Noobs</title>
 <body>
-        <ul>
-                <li><a class="active" href="#home">Home</a></li>
+        <ul class="topnav" id="navbar">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#strategien">Strategien</a></li>
                 <li><a href="#community">Community</a></li>
                 <li><a href="#werbung">Werbung</a></li>
-              </ul>
+        </ul>
+        <div id="home" class="home">
+                <h1 class="start">
+                        Streaming for Noobs
+                </h1>
+                <h2 class="start">
+                        Get Ready for the Crowed
+                </h2>
+        </div>
+        <div id="strategien">
+                <h2 class="shadow">
+                        Strategien fürs Streamen:
+                </h2>
+                <img class="strats" src="strats.jpg">
+
+        </div>
+        <div id="community">
+                <div class="boxed">
+                <p>
+                        Der Content des Streams ist Wichtig: Oft bieten sich viele Geschaltungsmöglichekeiten,
+                        wie Benachrichtigungen und co an. Dazu Spendenleisten und Goodies sind sehr anziehend.
+                        Immer freundlich bleiben und über jeden Follow bedanken. 
+                </p></div>
+                <div class="boxed-big">
+                <img src="stream-sc.png" width="100%">
+                </div>
+        </div>
+        <div id="twitch-embed" class="center"></div>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 854,
+            height: 480,
+            layout: "video",
+            channel: "bundescobra"
+          });
+        </script>
+        <div class="flex">
+
+
+        </div>
+        
 
 
 </body>
